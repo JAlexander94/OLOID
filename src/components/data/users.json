@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Stuart Wilson",
+        "email": "stuwils@btinternet.com",
+        "password": "StuOloid",
+        "id": 2
+    },
+    {
+        "name": "Robert Wilson",
+        "email": "robertjanwilson@gmail.com",
+        "password": "RobOloid",
+        "id": 3
+    },    
+    {
+        "name": "Joshua Alexander",
+        "email": "joshualukealexander@gmail.com",
+        "password": "JoshOloid",
+        "id": 4
+    }
+]

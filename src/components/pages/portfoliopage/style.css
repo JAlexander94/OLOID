@@ -1,0 +1,26 @@
+.portfolio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 15px;
+  min-height: 90vh;
+  height: fit-content;
+  margin-bottom: 5vh;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px 20px;
+}
+
+.portfolio-header{
+  height: 15vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.portfolio-header h3{
+  font-family: 'josefin sans' !important;
+  text-transform: uppercase;
+}

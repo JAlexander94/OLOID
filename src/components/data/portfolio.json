@@ -1,0 +1,178 @@
+[
+    {
+        "id": 1,
+        "name": "Curve",
+        "sector": "Fintech",
+        "stage": "Series C",
+        "platform": "Crowdcube",
+        "investdate": "31/05/2021",
+        "amount": {"OLOID":"7100","Stuart Wilson":"5000","Robert Wilson":"100","Joshua Alexander":"2000"},
+        "distributions": "0",
+        "market value" : "7100",
+        "IRR": "0%",
+        "eis": "No EIS",
+        "description": "Curve straddles tech and finance as an over the top banking platform, this allows it to accumulate the data that a traditional finance company would but without the regulation of a bank",
+        "H123": {
+            "bullet1":"Ended 2022 with £28m ARR",
+            "bullet2":"4.3m customers up from 3.3m in 2021",
+            "bullet3":"27% of new customers are choosing a paid card",
+            "para":"Aiming to be EBITDA positive before the end of 2023"
+        },
+        "image": "/images/sqcurve.png",
+        "link": "https://www.curve.com/en-gb/"
+    },
+    {
+        "id": 2,
+        "name": "Lick",
+        "sector": "Consumer",
+        "stage": "Series A",
+        "platform": "Seedrs",
+        "investdate": "30/06/2021",
+        "amount": {"OLOID":"7100","Stuart Wilson":"5000","Robert Wilson":"100","Joshua Alexander":"2000"},
+        "distributions": "2130",
+        "market value" : "3966",
+        "IRR": "-17.4%",
+        "eis": "EIS",
+        "description": "Curve straddles tech and finance as an over the top banking platform, this allows it to accumulate the data that a traditional finance company would but without the regulation of a bank",
+        "H123": {
+            "bullet1":"Ended 2022 with £28m ARR",
+            "bullet2":"4.3m customers up from 3.3m in 2021",
+            "bullet3":"27% of new customers are choosing a paid card",
+            "para":"Aiming to be EBITDA positive before the end of 2023"
+        },
+        "image": "/images/sqlick.png",
+        "link": "https://www.lick.com/uk"
+    },
+    {
+        "id": 3,
+        "name": "Plum",
+        "sector": "Fintech",
+        "stage": "Series A",
+        "platform": "Crowdcube",
+        "investdate": "31/10/2021",
+        "amount": {"OLOID":"9000","Stuart Wilson":"5000","Robert Wilson":"2000","Joshua Alexander":"2000"},
+        "distributions": "2700",
+        "market value" : "11927",
+        "IRR": "48.1%",
+        "eis": "EIS",
+        "description": "Curve straddles tech and finance as an over the top banking platform, this allows it to accumulate the data that a traditional finance company would but without the regulation of a bank",
+        "H123": {
+            "bullet1":"Ended 2022 with £28m ARR",
+            "bullet2":"4.3m customers up from 3.3m in 2021",
+            "bullet3":"27% of new customers are choosing a paid card",
+            "para":"Aiming to be EBITDA positive before the end of 2023"
+        },
+        "image": "/images/sqplum.png",
+        "link": "https://withplum.com/"
+    },
+    {
+        "id": 4,
+        "name": "All Plants",
+        "sector": "Consumer",
+        "stage": "Series B",
+        "platform": "Seedrs",
+        "investdate": "30/11/2021",
+        "amount": {"OLOID":"7500","Stuart Wilson":"5000","Robert Wilson":"500","Joshua Alexander":"2000"},
+        "distributions": "0",
+        "market value" : "7500",
+        "IRR": "0%",
+        "eis": "No EIS",
+        "description": "Curve straddles tech and finance as an over the top banking platform, this allows it to accumulate the data that a traditional finance company would but without the regulation of a bank",
+        "H123": {
+            "bullet1":"Ended 2022 with £28m ARR",
+            "bullet2":"4.3m customers up from 3.3m in 2021",
+            "bullet3":"27% of new customers are choosing a paid card",
+            "para":"Aiming to be EBITDA positive before the end of 2023"
+        },
+        "image": "/images/sqallplants.png",
+        "link": "https://allplants.com/"
+    },
+    {
+        "id": 5,
+        "name": "Deadhappy",
+        "sector": "Insurtech",
+        "stage": "Series B",
+        "platform": "Seedrs",
+        "investdate": "28/02/2022",
+        "amount": {"OLOID":"5500","Stuart Wilson":"5000","Robert Wilson":"500","Joshua Alexander":"0"},
+        "distributions": "1650",
+        "market value" : "5500",
+        "IRR": "27.9%",
+        "eis": "EIS",
+        "description": "Curve straddles tech and finance as an over the top banking platform, this allows it to accumulate the data that a traditional finance company would but without the regulation of a bank",
+        "H123": {
+            "bullet1":"Ended 2022 with £28m ARR",
+            "bullet2":"4.3m customers up from 3.3m in 2021",
+            "bullet3":"27% of new customers are choosing a paid card",
+            "para":"Aiming to be EBITDA positive before the end of 2023"
+        },
+        "image": "/images/sqdeadhappy.png",
+        "link": "https://deadhappy.com/"
+    },
+    {
+        "id": 6,
+        "name": "Moneybox",
+        "sector": "Fintech",
+        "stage": "Series D",
+        "platform": "Crowdcube",
+        "investdate": "31/05/2022",
+        "amount": {"OLOID":"8000","Stuart Wilson":"5000","Robert Wilson":"1000","Joshua Alexander":"2000"},
+        "distributions": "0",
+        "market value" : "8000",
+        "IRR": "0%",
+        "eis": "No EIS",
+        "description": "Curve straddles tech and finance as an over the top banking platform, this allows it to accumulate the data that a traditional finance company would but without the regulation of a bank",
+        "H123": {
+            "bullet1":"Ended 2022 with £28m ARR",
+            "bullet2":"4.3m customers up from 3.3m in 2021",
+            "bullet3":"27% of new customers are choosing a paid card",
+            "para":"Aiming to be EBITDA positive before the end of 2023"
+        },
+        "image": "/images/sqmoneybox.png",
+        "link": "https://www.moneyboxapp.com/"
+    },
+    {
+        "id": 7,
+        "name": "Heights",
+        "sector": "Consumer",
+        "stage": "Seed",
+        "platform": "Seedrs",
+        "investdate": "30/09/2022",
+        "amount": {"OLOID":"6000","Stuart Wilson":"5000","Robert Wilson":"1000","Joshua Alexander":"0"},
+        "distributions": "1800",
+        "market value" : "6000",
+        "IRR": "52.0%",
+        "eis": "EIS",
+        "description": "Curve straddles tech and finance as an over the top banking platform, this allows it to accumulate the data that a traditional finance company would but without the regulation of a bank",
+        "H123": {
+            "bullet1":"Ended 2022 with £28m ARR",
+            "bullet2":"4.3m customers up from 3.3m in 2021",
+            "bullet3":"27% of new customers are choosing a paid card",
+            "para":"Aiming to be EBITDA positive before the end of 2023"
+        },
+        "image": "/images/sqheights.png",
+        "link": "https://www.yourheights.com/"
+    },
+    {
+        "id": 8,
+        "name": "Fussy",
+        "sector": "Consumer",
+        "stage": "Seed",
+        "platform": "Seedrs",
+        "investdate": "30/11/2022",
+        "amount": {"OLOID":"7000","Stuart Wilson":"5000","Robert Wilson":"2000","Joshua Alexander":"2000"},
+        "distributions": "2100",
+        "market value" : "7000",
+        "IRR": "69.2%",
+        "eis": "EIS",
+        "description": "Curve straddles tech and finance as an over the top banking platform, this allows it to accumulate the data that a traditional finance company would but without the regulation of a bank",
+        "H123": {
+            "bullet1":"Ended 2022 with £28m ARR",
+            "bullet2":"4.3m customers up from 3.3m in 2021",
+            "bullet3":"27% of new customers are choosing a paid card",
+            "para":"Aiming to be EBITDA positive before the end of 2023"
+        },
+        "image": "/images/sqfussy.png",
+        "link": "https://www.getfussy.com/"
+    }
+]
