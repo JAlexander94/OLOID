@@ -2,7 +2,7 @@ import ProgressCircle from "./progresscircle"
 import { Flex, Stat, StatLabel, StatNumber, Text, useColorModeValue} from "@chakra-ui/react";
 import Card from "../card/Card";
 import IconBox from "../Icons/IconBox";
-import { CartIcon, DocumentIcon, GlobeIcon, WalletIcon} from "../Icons/Icons";
+import {WalletIcon} from "../Icons/Icons";
 import React from "react";
 
 const StatBox = ({title,value,increase,progress,colour}) => {

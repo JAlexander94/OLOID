@@ -6,7 +6,6 @@ import {ChevronDownIcon} from "@chakra-ui/icons"
 import Card from "./components/card/Card";
 import DonutChart from "./components/Charts/DonutChart";
 import LineChart from "./components/Charts/LineChart";
-import IconBox from "./components/Icons/IconBox";
 import React, { useRef } from "react";
 import { NavLink } from 'react-router-dom';
 // Variables
@@ -18,12 +17,9 @@ import { useParams } from 'react-router-dom';
 
 export default function Dashboard() {
   // Chakra Color Mode
-  const iconBlue = useColorModeValue("blue.500", "blue.500");
-  const iconBoxInside = useColorModeValue("white", "white");
   const textColor = useColorModeValue("white", "white");
   const tableRowColor = useColorModeValue("#F7FAFC", "navy.900");
   const borderColor = useColorModeValue("gray.100", "gray.600");
-  const textTableColor = useColorModeValue("gray.500", "white");
   const { colorMode } = useColorMode();
 
   const { "*": userName } = useParams();
