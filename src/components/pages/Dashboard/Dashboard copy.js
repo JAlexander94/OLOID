@@ -60,7 +60,7 @@ export default function Dashboard() {
           />
         </Flex>
       </Flex>
-      <Flex alignItems="center" justifyContent="center" mt="0px" mb="15px">
+      <Flex alignItems="center" justifyContent="flex-end" mt="0px" mb="15px">
       <Menu>
         <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
           Download OLOIDs Quarterly Report
