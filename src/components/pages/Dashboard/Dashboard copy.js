@@ -38,7 +38,6 @@ export default function Dashboard() {
   const contributions = userPortfolio.Contributions.reduce((total, contribution) => total + contribution.amount, 0);
   const distributions = userPortfolio.Distributions.reduce((total, distribution) => total + distribution.amount, 0);
   const marketValueData = userPortfolio['Market Value'];
-  const marketValueLabel = 'Market Value';
   const marketValue = marketValueData.reduce((total, value) => total + value.amount, 0);
 
   return (
