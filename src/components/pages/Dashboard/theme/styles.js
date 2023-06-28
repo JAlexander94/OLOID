@@ -13,7 +13,6 @@ export const globalStyles = {
       400: "#3652ba",
       500: "#1b3bbb",
       600: "#24388a",
-      600: "#24388a",
       700: "#1b254b",
       800: "#111c44",
       900: "#0b1437",
@@ -24,10 +23,10 @@ export const globalStyles = {
       body: {
         overflowX: "hidden",
         bg: mode("gray.50", "#1B254B")(props),
-        fontFamily: "Helvetica, sans-serif",
+        fontFamily: "Lexend, sans-serif",
       },
       html: {
-        fontFamily: "Helvetica, sans-serif",
+        fontFamily: "Lexend, sans-serif",
       },
     }),
   },

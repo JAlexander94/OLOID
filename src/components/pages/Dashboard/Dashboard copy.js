@@ -36,9 +36,27 @@ export default function Dashboard() {
   const userPortfolio = Data[userRef.current];
   const commitment = userPortfolio.Commitment[userPortfolio.Commitment.length - 2].amount;
   const contributions = userPortfolio.Contributions.reduce((total, contribution) => total + contribution.amount, 0);
+  const lastqcontributions = userPortfolio.Contributions
+  .filter(contribution => contribution.date <= '2022-12-31') // Filter contributions before or on 31/12/2022
+  .reduce((total, contribution) => total + contribution.amount, 0);
   const distributions = userPortfolio.Distributions.reduce((total, distribution) => total + distribution.amount, 0);
+  const lastqdistributions = userPortfolio.Distributions
+  .filter(distribution => distribution.date <= '2022-12-31') // Filter contributions before or on 31/12/2022
+  .reduce((total, distribution) => total + distribution.amount, 0);
   const marketValueData = userPortfolio['Market Value'];
   const marketValue = marketValueData.reduce((total, value) => total + value.amount, 0);
+  const lastqmarketValue = userPortfolio['Market Value']
+  .filter(value => value.date <= '2022-12-31') // Filter market values before or on 31/12/2022
+  .reduce((total, value) => total + value.amount, 0);
+  const contributionspie = contributions/commitment
+  const distributionspie = distributions/contributions
+  const contributionsincrease = (((contributions-lastqcontributions)/lastqcontributions))
+  const formattedcontribs = new Intl.NumberFormat('en-US', {style: 'percent', signDisplay: 'always',}).format(contributionsincrease);
+  const distributionsincrease = (((distributions-lastqdistributions)/lastqdistributions))
+  const formatteddistribs = new Intl.NumberFormat('en-US', {style: 'percent', signDisplay: 'always',}).format(distributionsincrease);
+  const mktvalueincrease = (((marketValue-lastqmarketValue)/lastqmarketValue))
+  const formattedmktvalue = new Intl.NumberFormat('en-US', {style: 'percent', signDisplay: 'always',}).format(mktvalueincrease);
+
 
   return (
     <Flex flexDirection='column' pt={{ base: "20px", md: "20px" }}>
@@ -80,21 +98,21 @@ export default function Dashboard() {
         <StatBox
           title="Contributions"
           value={contributions}
-          increase="+0%"
-          progress={0.79}
+          increase={formattedcontribs}
+          progress={contributionspie}
           colour="green.400"
         />
         <StatBox
           title="Distributions"
           value={distributions}
-          increase="+24%"
-          progress={0.19}
+          increase={formatteddistribs}
+          progress={distributionspie}
           colour="green.400"
         />
         <StatBox
           title="Market Value"
           value={marketValue}
-          increase="-5.2%"
+          increase={formattedmktvalue}
           progress={0}
           colour="red.400"
         />
@@ -110,7 +128,7 @@ export default function Dashboard() {
               : "linear-gradient(81.62deg, #313860 2.25%, #151928 79.87%)"
           }
           p='0px'
-          maxW={{ sm: "90%", md: "100%" }}>
+          maxW={{ sm: "90vw", md: "93vw" }}>
           <Flex direction='column' mb='0px' p='20px 0px 0px 28px'>
             <Text color='#fff' fontSize='lg' fontWeight='bold' mb='6px'>
               Value Overview
@@ -123,18 +141,18 @@ export default function Dashboard() {
             <LineChart user={userRef.current} key={toggleState.toString()} />
           </Box>
         </Card>
-        <Card p='0px' pt="12px" maxW={{ sm: "90%", md: "100%" }} minH={{sm: "300px"}} sx={{ border: "1px solid white", borderRadius: "5px" }}>
+        <Card p='0px' pt="12px" maxW={{ sm: "90vw", md: "93vw" }} minH={{sm: "300px"}} sx={{ border: "1px solid white", borderRadius: "5px" }}>
           <DonutChart />
         </Card>
-        <Card p='0px' maxW={{ sm: "90%", md: "100%", lg: "152%" }} minW={{md: "100%", lg: "152%" }} id="card">
+        <Card p='0px' maxW={{ sm: "90vw", md: "93vw", lg: "152%" }} minW={{md: "93vw", lg: "152%" }} id="card">
           <Flex direction='column'>
             <Flex align='center' justify='space-between' p='22px'>
               <Text fontSize='lg' color={textColor} fontWeight='bold'>
                 Investments
               </Text>
-              <Button variant='primary' maxH='30px'>
+              {/* <Button variant='primary' maxH='30px'>
                 Download Data
-              </Button>
+              </Button> */}
             </Flex>
             <Box overflow={{ sm: "scroll", lg: "hidden" }}>
               <Table>
@@ -160,12 +178,17 @@ export default function Dashboard() {
                 <Tbody>
                   {investments.map((investment, index) => {
                     const userAmount = investment.amount[userRef.current];
-                    console.log(userAmount)
                     const amount = userAmount ? parseFloat(userAmount.replace(",", "")).toLocaleString("en-GB") : "";
-
                     const contribution = userAmount ? parseFloat(userAmount.replace(",", "")) : 0;
-                    const distributions = parseFloat(investment.distributions.replace(",", ""));
-                    const marketValue = parseFloat(investment["market value"].replace(",", ""));
+
+                    const userDist = investment.distributions[userRef.current];
+                    const distributions = userDist ? parseFloat(userDist.replace(",", "")) : 0;
+
+                    const userMktVal = investment.marketvalue[userRef.current];
+                    const marketValue = userMktVal ? parseFloat(userMktVal.replace(",", "")) : 0;
+
+                    const irr = investment.IRR[userRef.current];
+
                     const dpi = (distributions / contribution).toFixed(1)+"x";
                     const tvpi = ((distributions + marketValue) / contribution).toFixed(1)+"x";
                     return (
@@ -209,7 +232,7 @@ export default function Dashboard() {
                           border={index === investments.length - 1 ? "none" : null}
                           borderColor={borderColor}
                         >
-                          {investment.IRR}
+                          {irr}
                         </Td>
                       </Tr>
                     );

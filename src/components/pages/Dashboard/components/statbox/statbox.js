@@ -8,7 +8,6 @@ import React from "react";
 const StatBox = ({title,value,increase,progress,colour}) => {
 
       // Chakra Color Mode
-  const iconBlue = useColorModeValue("blue.500", "blue.500");
   const iconBoxInside = useColorModeValue("white", "white");
   const textColor = useColorModeValue("white", "white");
 
@@ -67,7 +66,7 @@ const StatBox = ({title,value,increase,progress,colour}) => {
               <Text as='span' color={colour} fontWeight='bold'>
                 {increase}{" "}
               </Text>
-              In the Last Quarter
+              Since End of 2022
             </Text>
           </Flex>
         </Card>

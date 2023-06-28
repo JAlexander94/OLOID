@@ -5,7 +5,7 @@ import "./navtabs.css";
 function NavTabs() {
   return (
     <ul className="nav nav-tabs">
-      <img src="/images/nav-logo.png"></img>
+      <img src="/images/nav-logo.png" alt="logo"></img>
       <li className="nav-item">
         <NavLink
           to="/"

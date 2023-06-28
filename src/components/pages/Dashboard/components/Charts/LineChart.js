@@ -81,13 +81,13 @@ const lineChartOptions = {
       type: "vertical",
       shadeIntensity: 0.5,
       inverseColors: true,
-      opacityFrom: 0.8,
+      opacityFrom: 0.5,
       opacityTo: 0,
       stops: [],
     },
-    colors: ["#fff", "#3182CE"],
+    colors: ["#fff"],
   },
-  colors: ["#fff", "#3182CE"],
+  colors: ["#fff", "#3182CE","#000","#B8D8BE","#333"],
 };
 
 function transformData(data, user) {

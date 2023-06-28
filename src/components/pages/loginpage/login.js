@@ -26,11 +26,6 @@ const Login = () => {
     }
   };
 
-  const contactSubmit = async (e) => {
-    e.preventDefault()
-    navigate('/contact');
-  }
-
 
   return(
     <div className="loginwrapper">

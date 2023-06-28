@@ -1,7 +1,7 @@
 export const Data = { 
     "OLOID":{
         "Commitment": [
-            {"date": "2021-05-31","name": "Null","amount":72200},
+            {"date": "2021-05-31","name": "Null","amount":72100},
             {"date": "2023-06-30","name": "Null","amount":0}
         ],
         "Contributions": [
@@ -15,6 +15,7 @@ export const Data = {
             {"date": "2022-09-30","name": "Heights","amount":6000},
             {"date": "2022-10-31","name": "Plum","amount":1500},
             {"date": "2022-11-30","name": "Fussy","amount":7000},
+            {"date": "2023-05-31","name": "Lick","amount":900},
             {"date": "2023-06-30","name": "Null","amount":0}
         ],
         "Market Value": [
@@ -29,7 +30,7 @@ export const Data = {
             {"date": "2022-10-31","name": "Plum","amount":2927},
             {"date": "2022-10-31","name": "Plum","amount":1500},
             {"date": "2022-11-30","name": "Fussy","amount":7000},
-            {"date": "2023-05-31","name": "Lick","amount":-3134},
+            {"date": "2023-05-31","name": "Lick","amount":-2234},
             {"date": "2023-06-30","name": "Null","amount":0}
         ],
         "Distributions": [
@@ -86,7 +87,7 @@ export const Data = {
     },
     "Robert Wilson":{
         "Commitment": [
-            {"date": "2021-05-31","name": "Null","amount":8200},
+            {"date": "2021-05-31","name": "Null","amount":9100},
             {"date": "2023-06-30","name": "Null","amount":0}
         ],
         "Contributions": [
@@ -100,6 +101,7 @@ export const Data = {
             {"date": "2022-09-30","name": "Heights","amount":1000},
             {"date": "2022-10-31","name": "Plum","amount":1500},
             {"date": "2022-11-30","name": "Fussy","amount":1000},
+            {"date": "2023-05-31","name": "Lick","amount":900},
             {"date": "2023-06-30","name": "Null","amount":0}
         ],
         "Market Value": [
@@ -114,7 +116,7 @@ export const Data = {
             {"date": "2022-10-31","name": "Plum","amount":195},
             {"date": "2022-10-31","name": "Plum","amount":1500},
             {"date": "2022-11-30","name": "Fussy","amount":1000},
-            {"date": "2023-05-31","name": "Lick","amount":-44},
+            {"date": "2023-05-31","name": "Lick","amount":856},
             {"date": "2023-06-30","name": "Null","amount":0}
         ],
         "Distributions": [
@@ -130,7 +132,7 @@ export const Data = {
     },
     "Joshua Alexander":{
         "Commitment": [
-            {"date": "2021-05-31","name": "Null","amount":14000},
+            {"date": "2021-05-31","name": "Null","amount":13000},
             {"date": "2023-06-30","name": "Null","amount":0}
         ],
         "Contributions": [
@@ -140,7 +142,7 @@ export const Data = {
             {"date": "2021-10-31","name": "Plum","amount":2000},
             {"date": "2021-11-30","name": "Allplants","amount":2000},
             {"date": "2022-05-31","name": "Moneybox","amount":2000},
-            {"date": "2022-11-30","name": "Fussy","amount":2000},
+            {"date": "2022-11-30","name": "Fussy","amount":1000},
             {"date": "2023-06-30","name": "Null","amount":0}
         ],
         "Market Value": [
@@ -151,7 +153,7 @@ export const Data = {
             {"date": "2021-11-30","name": "Allplants","amount":2000},
             {"date": "2022-05-31","name": "Moneybox","amount":2000},
             {"date": "2022-10-31","name": "Plum","amount":781},
-            {"date": "2022-11-30","name": "Fussy","amount":2000},
+            {"date": "2022-11-30","name": "Fussy","amount":1000},
             {"date": "2023-05-31","name": "Lick","amount":-883},
             {"date": "2023-06-30","name": "Null","amount":0}
         ],
